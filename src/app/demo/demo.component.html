@@ -1,0 +1,46 @@
+<html>
+<div class="container-fluid">
+  <div class="row">
+    
+    <div class="col-12">
+    <div [hidden]="submitted" >
+<!-- multistep form -->
+<form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar"  class="p1">
+      <li class="active">Personal details</li>
+      <li  class="active">Account setup</li>
+      <li class="active">Set pin</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Set up your pin</h2>
+      <h3 class="fs-subtitle">This is step 3</h3>
+      <!-- <input type="text" name="email" placeholder="Email" />
+      <input type="password" name="pass" placeholder="Password" />
+      <input type="password" name="cpass" placeholder="Confirm Password" />
+      <input type="button" name="next" class="next action-button" value="Next" /> -->
+      <label for="pin" class="fs-title2"><span class="req">* </span>Pin </label>
+      <input required pattern="^[A-Z a-z]+$" type="text" [(ngModel)]="pin"
+          name="pin" id="pin" class="form-control "
+          placeholder="pin"  #firstname="ngModel">
+
+
+          <label for="confirmpin" class="fs-title2"><span class="req">* </span>Re-enter Pin: </label>
+          <input required pattern="^[A-Z a-z]+$" type="text" [(ngModel)]="confirmpin"
+              name="confirmpin" id="confirmpin" class="form-control "
+              placeholder="Re-enter Pin">
+    <br>
+
+    <button class="next action-button">Submit</button>
+    </fieldset>
+   
+  </form>
+  </div>
+</div>
+</div>
+</div>
+
+<script src="demo.js" type="textscript"></script>
+
+  </html>

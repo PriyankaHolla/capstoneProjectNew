@@ -1,0 +1,42 @@
+<html>
+
+   <div class="container-fluid">
+       <div class="row">
+           <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+               <div class="colour1">
+<!-- multistep form -->
+<form id="msform">
+   
+
+    <!-- fieldsets -->
+    <fieldset>
+      <h1 class="fs-title">LOGIN</h1>
+    
+
+     
+      <label for="username" class="fs-title2"><span class="req">* </span>Username: </label>
+      <input required  type="text"
+          name="username" id="username" pattern="^[A-Za-z0-9_-]{3,15}$" class="form-control "
+          placeholder="Username"  >
+
+
+          <label for="password" class="fs-title2"><span class="req">* </span>Password: </label>
+          <input required  type="text"  pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$"
+              name="password" id="password" class="form-control "
+              placeholder="Password">
+    <br>
+
+    <button class="next action-button">Submit</button>
+   
+    </fieldset>
+   
+  </form>
+
+
+
+<script src="demo.js" type="textscript"></script>
+</div>
+</div>
+</div>
+</div>
+  </html>
