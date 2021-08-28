@@ -71,7 +71,7 @@ basecurrency:any;
     }
 
 back(){
-  this.router.navigate(['register1']);
+  this.router.navigate(['register']);
 }
 
 }

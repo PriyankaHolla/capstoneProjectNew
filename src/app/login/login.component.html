@@ -1,44 +1,19 @@
-<html>
+<div class="container">
+  
+  <div class="left">
+    <div class="header">
+      <h2 class="animation a1">Welcome Back</h2>
+      <h4 class="animation a2">Log in to your account using email and password</h4>
+    </div>
+    <div class="form">
+      <input type="text" class="form-field animation a3" placeholder="username">
+      <input type="password" class="form-field animation a4" placeholder="Password">
 
-   <div class="container-fluid">
-       <div class="row">
-           <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-               <div class="colour1">
-                 <h1>ATLAS MONEY</h1>
-                 <h2>Login </h2>
-<!-- multistep form -->
-<form id="msform">
-   
-
-    <!-- fieldsets -->
-    <fieldset>
-     
-    
-
-     
-      <label for="username" class="fs-title2"><span class="req">* </span>Username: </label>
-      <input required  type="text"
-          name="username" id="username" pattern="^[A-Za-z0-9_-]{3,15}$" class="form-control "
-          placeholder="Username"  >
+      <button class="animation a6">LOGIN</button>
+      <p>Dont have an account? <a routerLink="/register">Register here</a></p>
+    </div>
+  </div>
 
 
-          <label for="password" class="fs-title2"><span class="req">* </span>Password: </label>
-          <input required  type="text"  pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$"
-              name="password" id="password" class="form-control "
-              placeholder="Password">
-    <br>
-
-    <button class="next action-button">Submit</button>
-   
-    </fieldset>
-   
-  </form>
-
-
-
-<script src="demo.js" type="textscript"></script>
-</div>
-</div>
-</div>
-</div>
-  </html>
+  <div class="right"></div>
+</div> 
