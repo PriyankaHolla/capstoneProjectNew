@@ -102,6 +102,14 @@ html {
 	color: #666;
 	margin-bottom: 20px;
 }
+h1{
+	text-align: center;
+	padding-top: 20px;
+}
+h2{
+	text-align: center;
+	padding-top: 20px;
+}
 /*progressbar*/
 #progressbar {
 	margin-bottom: 30px;
